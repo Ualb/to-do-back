@@ -30,5 +30,6 @@ export class MongoTodoAtlasDataSource extends juggler.DataSource
     dsConfig: object = config,
   ) {
     super(dsConfig);
+    console.log(process.env.USER);
   }
 }

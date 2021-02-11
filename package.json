@@ -60,6 +60,7 @@
     "dotenv": "^8.2.0",
     "loopback-connector-mongodb": "^5.5.0",
     "mongodb": "^3.6.3",
+    "mongoose": "^5.11.15",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

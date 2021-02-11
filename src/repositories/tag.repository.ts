@@ -1,6 +1,6 @@
 import {inject} from '@loopback/core';
 import {DefaultCrudRepository} from '@loopback/repository';
-import {Error: bad inputDataSource} from '../datasources';
+import {MongoTodoAtlasDataSource} from '../datasources';
 import {Tag, TagRelations} from '../models';
 
 export class TagRepository extends DefaultCrudRepository<
@@ -9,7 +9,7 @@ export class TagRepository extends DefaultCrudRepository<
   TagRelations
 > {
   constructor(
-    @inject('datasources.') dataSource: Error: bad inputDataSource,
+    @inject('datasources.') dataSource: MongoTodoAtlasDataSource,
   ) {
     super(Tag, dataSource);
   }

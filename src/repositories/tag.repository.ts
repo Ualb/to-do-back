@@ -9,7 +9,7 @@ export class TagRepository extends DefaultCrudRepository<
   TagRelations
 > {
   constructor(
-    @inject('datasources.') dataSource: MongoTodoAtlasDataSource,
+    @inject('datasources.MongoTodoAtlas') dataSource: MongoTodoAtlasDataSource,
   ) {
     super(Tag, dataSource);
   }
